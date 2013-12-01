@@ -1,0 +1,71 @@
+*{margin:0px;padding:0px;outline:0px;}
+
+html{height:100%;}
+
+header, section, footer, aside, nav, article, hgroup,div,span {display:block;}
+
+header{color:#595959;margin:0px;background-image: url(download.jpg);background-repeat:no repeat;width:100%;height:150px;}
+
+body{min-width:100%;background-color:#F5F5F5;}
+
+h1{font: bold 0.8em Verdana,sans-serif;margin-left:60%;opacity:0.8;padding:5px;}
+
+h1>a{color:#595959;text-decoration:none;}
+
+h1>a:hover{color:#0398de;text-decoration:underline;opacity:1;}
+
+#big_wrapper{max-width:100%;margin:0px 0px;display:-webkit-box;display:box;-webkit-box-orient: vertical;box-orient: vertical;
+-webkit-box-flex: 1;box-flex: 1;}
+
+ul.menu {list-style:none;font-family:"Verdana",sans-serif;border-top:1px solid #bebebe;float:left;margin-top:0px;margin-left:10px;}
+
+ul.menu li{float:left;}
+
+ul.menu li a{text-decoration:none;background:#7E7E7E url(bgMenu.png) repeat-x top left;padding:15px 0px;width:220px;color:#006699;float:left;text-align:center;
+border-right:1px solid #a1a1a1;border-left:1px solid #e8e8e8;font-weight:bold;font-size:1em;-moz-box-shadow: 0 1px 3px #555;-webkit-box-shadow: 0 1px 3px #555;
+box-shadow:0 1px 3px #555;}
+
+ul.menu li a:hover{background-image:none;color:#fff;text-shadow: 0 -1px 1px #000;}
+
+ul.menu li a.first{-moz-border-radius:0px 0px 0px 5px;-webkit-border-bottom-left-radius: 10px; -webkit-border-top-left-radius: 5px; border-bottom-left-radius:5px;border-top-left-radius:5px;border-left:none;border-top:none;}
+
+ul.menu li a.last{-moz-border-radius:0px 0px 0px 10px;-webkit-border-bottom-right-radius: 10px; -webkit-border-top-right-radius: 5px;border-right:none;}
+
+#about{border-bottom:2px solid #cccccc;display:-webkit-box;display:-moz-box;-webkit-box-orient:vertical;-moz-box-orient:vertical;display:box;box-orient:vertical;box-sizing:border-box;width:67%;background::-moz-linear-gradient(#F0F0F0,#EDEDED);background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #F0F0F0),color-stop(1, #EDEDED));background: -o-linear-gradient(linear,left bottom,left top,color-stop(0,#F0F0F0 ),color-stop(1, #EDEDED));margin-left:210px;}
+
+#about>h4{font-size:1.5em;text-align:center; font-family:'Lobster', Georgia, Times, serif;}
+
+#about>p{text-align:justify;font-size:1.2em;line-height:1.7;margin:40px auto;margin-left:10px;font-family:'Cabin', Helvetica, Arial, sans-serif;}
+
+footer{border-top:2px solid #595959;height:180px;background:#242424;margin-top:50px;margin-bottom:0px;text-align:right;padding:20px;color:#0398de;font:bold 1em Segoe UI,Tahoma,Helvetica,Sans-Serif;}
+
+footer>ul{margin-top:-120px;text-align:left;padding-left:30px;}
+
+footer>ul>li{padding:3px;font:bold 1em Segoe UI,Tahoma,Helvetica,Sans-Serif;list-style:none;}
+
+footer>ul>li a{text-decoration:none;color:#595959;}
+
+footer>ul>li a:hover{color:#0398de;opacity:0.7;text-decoration:underline;cursor:pointer;}
+
+footer>span{color:white;font-size:1.2em;font-style:italic;}
+
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 480px) {
+   body { font-size:0.8em;}
+   footer{font-size:0.8em;}
+   footer>ul{margin:0px;padding:0px;}
+   ul.menu li a{width:285px;}
+   #about{margin-left:10px;width:92%;}
+  
+}
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) {
+   body { font-size:1em;}
+   footer{font-size:0.7em;}
+   footer>ul{margin:0px;padding:0px;}
+   ul.menu li a{width:250px;}
+   #about{margin-left:10px;width:98%;}
+    #about>p{font-size:0.8em;font-weight:bold;}
+ }

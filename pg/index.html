@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<title>
+Paying guests,hostels,rentals..
+</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<!-- /*============== search box effects =========*/ -->
+<script>
+$(document).ready(function(e){
+
+
+	$(".city").change(function(e){
+		$(".location").attr("disabled", false) ;
+	});
+
+	$(".location").change(function(e)
+	{
+	$(".gender").attr("disabled",false);
+	
+    });
+});
+</script>
+
+
+
+
+<!-- /*============== search box effects ends =========*/ -->
+
+<script type="text/javascript" src="js/fade.js"></script>
+
+<script type="text/javascript">
+var image1=new Image()
+image1.src="apartment1.jpg"
+var image2=new Image()
+image2.src="apartment6.jpg"
+var image3=new Image()
+image3.src="apartment8.jpg"
+var image4=new Image()
+image4.src="apartment4.jpg"
+</script>
+
+</head>
+<body>
+
+<!-- /*============== header starts here =========*/ -->
+<div id="header">
+<a href="index.html">
+<span>RoofAgain</span>
+</a>
+<form  id="search_box" action="#nogo">
+    <input  id="top_search" type="text" placeholder="Search here"/>
+    <input  id="top_submit" type="submit" value="Submit"/>
+</form>
+<a id="sign"href="#nogo">SIGN UP</a>
+<a id="login" href="#nogo">LOGIN</a>
+<a id="help" href="#nogo">HELP</a>
+<a id="list" href="#nogo">LIST YOUR SPACE</a>
+</div>
+<!-- /*============== header ends here =========*/ -->
+
+<div id="slide">
+<img src="appartment1.jpg" name="slide" />
+<p>New  to the Place.</br></p><span>Find over  100 options to get your roof again.</span>
+</div>
+
+<!-- /*============== Slide show effects starts here =========*/ -->
+<script>
+var step=1
+function slideit()
+{
+//if browser does not support the image object, exit.
+if (!document.images)
+return
+document.images.slide.src=eval("image"+step+".src")
+if (step<4)
+step++
+else
+step=1
+//call function "slideit()" every 2.5 seconds
+setTimeout("slideit()",2500)
+}
+slideit()
+</script>
+<!-- /*============== Slide show effects ends here =========*/ -->  
+  
+
+<!-- /*============== Select box starts here =========*/ -->  
+
+<form id="searchform" method="post" action="#nogo">
+<!--<div id="mainselection1">
+<select  class="city" id="mainselection1">
+    <option selected>Select your city</option >
+    <option>Bangalore</option>
+    
+</select>
+</div>
+<div id="mainselection2">
+<select class="location" disabled>
+
+    <option selected>Select your Location</option >
+    <option>Marathahalli</option>
+    <option>BTM</option>
+	<option>Koramangala</option>
+
+</select>
+</div>
+<div id="mainselection3">
+<select class="gender"disabled>
+    <option selected>Select your gender</option >
+    <option>Male</option>
+    <option>Female</option>
+	
+</select>
+</div>-->
+<label id="sel1">
+<select  class="city" id="select1">
+    <option selected>Select your city</option >
+    <option>Bangalore</option>
+	</select>
+</label>
+<label id="sel2">	
+<select class="location" id="select2" disabled>
+
+<option selected>Select your Location</option >
+    <option>Marathahalli</option>
+    <option>BTM</option>
+	<option>Koramangala</option>
+
+</select>
+</label>
+<label id="sel3">
+<select class="gender" id="select3" disabled>
+    <option selected>Select your gender</option >
+    <option>Male</option>
+    <option>Female</option>
+</select>
+</label>
+<input type="submit" value="Search"/>
+</form>
+
+<!-- /*============== Select box here =========*/ -->
+		
+<div id="body">
+<p id="description">Find a roof for you</br>
+</p>
+<span id="sub-description">Don't want to rent a house, Need a temporary stay...Browse through your favorite location.</span>
+<div class="image" id="wrapper">
+<img class="fadeto" src="kormangala.jpg" />
+<h2 id="h1">Kormangala</h2>
+<img class="fadeto" src="btm.jpg" />
+<h2 id="h2">BTM</h2>
+<img class="fadeto" src="HSR_layout.jpg" />
+<h2 id="h3">HSR Layout</h2>
+<img class="fadeto" src="bellandur.jpg" />
+<h2 id="h4">Bellandur</h2>
+<img class="fadeto" src="Brigade RoadBangalore.jpg" />
+<h2 id="h5">Brigade Road</h2>
+<img class="fadeto" src="Marathahalli.jpg" />
+<h2 id="h6">Marathahalli</h2>
+
+</div>
+<p id="lowertext"><a id="color" href="#">All neighbourhood guides</a>
+</p>
+</div>
+
+<!-- /*============== footer starts here =========*/ -->
+<div id="footer">
+<div id="sub-footer1">
+<h3>Your Options</h3></br>
+<p>Find your roof in varying price ranges and having varying facilities.Filter your choices based on your needs.
+Select your roof based on feedback.
+Share your place with your friends.
+</br>
+</p>
+</div>
+<div id="sub-footer2">
+<h3>Owners</h3></br>
+<p>Share your space with us,use the viral power </br>of social networking to get more customers.
+</br></br>
+
+</br></br></br></br></br></br>
+</p>
+</div>
+<div id="sub-footer3">
+<h3>Your Thought</h3></br>
+<p>Share your thought about our initiative</p>
+</div>
+<!--<span id="settings">Location Settings</br></span>-->
+<!--<div id="final-footer1">
+<img id="btn-globe"src="globe.jpg" height="22px" width="15px"/><input type="button" value="English" class="btn"><img id="btn-image"src="arrow.png" height="8px" width="10px"/></input>
+<img id="btn-rupee" src="rupee.jpg" height="18px" width="12px"/><input type="button" value="INR" class="btn1"><img id="btn-image1"src="arrow.png" height="8px" width="10px"/></input>
+</div>
+<span id="discover">Discover</span>
+<div id="final-footer2">
+<ul class="footer-links">
+<li><a href="#">Trust & Safety</a></li>
+<li><a href="#">Airbnb Picks</a></li>
+<li><a href="#">Mobile</a></li>
+<li><a href="#">Why Host</a></li>
+<li><a href="#">Social Connections</a></li>
+<li><a href="#">Site Map</a></li></ul>
+</div>
+<span id="company">Company</span>
+<div id="final-footer3">
+<ul class="footer-links2">
+<li><a href="#">About</a></li>
+<li><a href="#">Jobs</a></li>
+<li><a href="#">Press</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Help</a></li>
+<li><a href="#">Policies</a></li>
+<li><a href="#">Responsible Hosting</a></li>
+<li><a href="#">Disaster Response</a></li>
+<li><a href="#">Terms & Privacy</a></li></ul>
+</div>
+<span id="join">Join us on</span>
+<div id="final-footer4">
+<ul class="footer-links3">
+<li><a href="#">Twitter</a></li>
+<li><a href="#">Facebook</a></li>
+<li><a href="#">Google</a></li>
+<li><a href="#">Youtube</a></li>
+</ul>
+</div>-->
+</div>
+
+<!-- /*============== footer ends here =========*/ -->
+</div>
+</body>
+</html>
+
+
+
+
+
+
+

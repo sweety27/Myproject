@@ -1,0 +1,21 @@
+ @media all and (max-width: 640px) {
+  
+   #big_wrapper #page #wrapper{
+    -webkit-flex-flow: column;
+	-moz-flex-flow: column;
+            flex-flow: column;
+   }
+   
+    #big_wrapper > article, #big_wrapper > nav, #big_wrapper > aside {
+    
+    -webkit-order: 0;
+	 -moz-order: 0;
+            order: 0;
+   }
+  
+   #big_wrapper > nav, #big_wrapper >  header, footer,h1,#wrapper>section {
+    min-height: 50px;
+    max-height: 50px;
+	
+   }
+  }

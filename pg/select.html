@@ -1,0 +1,185 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<style type="text/css">
+body, html {background:#FFF; text-align:center; padding:50px 0;}
+form#searchform
+{
+	width: 65%;
+	height:5%;
+	background-color:rgba(0,0,0,0.7);
+	position: absolute;
+	top:15%;
+	bottom:0;
+	border:3px solid #282828;
+	left:0;
+	right:0;
+	margin:auto;
+	-moz-border-radius:0px 0px 0px 10px; 
+	-webkit-border-bottom-left-radius: 5px; 
+	-webkit-border-top-left-radius: 5px; 
+	-moz-border-radius:0px 0px 0px 10px;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+}
+	 
+select {
+    padding:3px;
+   -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    background: #f8f8f8;
+    color:#888;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+	
+	
+}
+
+#select1
+{
+position:absolute;
+top:-2px;
+right:247px;
+width:200px;
+height:35px;
+}
+#select2
+{
+position:absolute;
+top:-2px;
+right:40px;
+width:200px;
+height:35px;
+}
+#select3
+{
+position:absolute;
+top:-2px;
+right:-180px;
+width:200px;
+height:35px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select {padding-right:18px}
+}
+
+label 
+{
+position:relative
+}
+
+
+ #sel1:after {
+    content:'<>';
+    font:11px "Consolas", monospace;
+    color:#aaa;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:250px; top:2.8px;
+	padding:0 0 2px;
+    border-bottom:1px solid #ddd;
+    position:absolute;
+    pointer-events:none;
+}
+
+ #sel1:before {
+    content:'';
+    right:248px; top:2.8px;
+    width:20px; height:20px;
+    background:#f8f8f8;
+    position:absolute;
+	
+    pointer-events:none;
+    display:block;
+}
+ #sel2:after {
+    content:'<>';
+    font:11px "Consolas", monospace;
+    color:#aaa;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:45px; top:2.8px;
+	padding:0 0 2px;
+    border-bottom:1px solid #ddd;
+    position:absolute;
+    pointer-events:none;
+}
+
+ #sel2:before {
+    content:'';
+    right:43px; top:2.8px;
+    width:20px; height:20px;
+    background:#f8f8f8;
+    position:absolute;
+	
+    pointer-events:none;
+    display:block;
+}
+ #sel3:after {
+    content:'<>';
+    font:11px "Consolas", monospace;
+    color:#aaa;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:-178px; top:2.8px;
+	padding:0 0 2px;
+    border-bottom:1px solid #ddd;
+    position:absolute;
+    pointer-events:none;
+}
+
+ #sel3:before {
+    content:'';
+    right:-176px; top:2.8px;
+    width:20px; height:20px;
+    background:#f8f8f8;
+    position:absolute;
+	
+    pointer-events:none;
+    display:block;
+}
+</style>
+</head>
+<body>
+<form id="searchform" method="post" action="#nogo">
+<label id="sel1">
+<select  class="city" id="select1">
+    <option selected>Select your city</option >
+    <option>Bangalore</option>
+	</select>
+</label>
+<label id="sel2">	
+<select class="location" id="select2" disabled>
+
+<option selected>Select your Location</option >
+    <option>Marathahalli</option>
+    <option>BTM</option>
+	<option>Koramangala</option>
+
+</select>
+</label>
+<label id="sel3">
+<select class="gender" id="select3" disabled>
+    <option selected>Select your gender</option >
+    <option>Male</option>
+    <option>Female</option>
+</select>
+</label>
+</form>
+</body>
+</html>
